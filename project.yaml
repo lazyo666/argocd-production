@@ -24,7 +24,15 @@ spec:
     kind: StatefulSet
   - group: 'extensions/v1beta1'
     kind: Ingress
+  - group: 'argoproj.io'
+    kind: Application
   - group: 'v1'
+    kind: Service
+  - group: 'extensions'
+    kind: Ingress
+  - group: 'networking.k8s.io'
+    kind: Ingress
+  - group: ''
     kind: Service
   namespaceResourceBlacklist:
   - group: ''
